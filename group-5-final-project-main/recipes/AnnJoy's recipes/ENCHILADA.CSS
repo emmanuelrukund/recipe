@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    max-width: 500px;
+    float: left;
+    border-radius: 10px;
+    border: 2px solid palevioletred;
+    margin-right: 20px;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blanchedalmond;
+}
+.container{
+    margin: 100px auto;
+    width: 75%;
+}
+.intro h2{
+    text-align: center;
+    padding-bottom: 5px;
+    color: brown;
+    font-size: 30px;
+}
+.intro p{
+    text-align: center;
+    font-size: 18px;
+}
+.ingredients h2{
+    color: brown;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ingredients ul li{
+    font-size: 18px;
+    
+}
+.instructions h2{
+    color: brown;
+    text-align: center;
+}
+.instructions ol li{
+    font-size: 18px;
+    
+}

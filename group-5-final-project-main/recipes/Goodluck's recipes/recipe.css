@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+
+}
+img{
+    width: 100%;
+    height:auto
+}
+
+body{
+    position: absolute;
+    color: green;
+    width: 90%;
+    
+}
+
+
+.container{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+
+}
+
+/* css for the header */
+.above_image{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    top:-100px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 5px 0px #000000;
+}
+.hero_header{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-style: normal;
+    max-width:300px;
+    color:#c86500 ;
+}
+.hero_para_heading{
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 2.5em;
+}
+.pre_info{
+    border-top: 1px solid #2c2d3080;
+    border-bottom: 1px solid #2c2d3080;
+    margin: 2em 0;
+    padding: 1em 0;
+    display: flex;
+    justify-content:space-around ;
+    gap: 2em;
+    font-size: 1.2rem;
+}
+.info_li{
+    padding: 0;
+    list-style: none;   
+}
+.info,.time{
+    display: block;
+}
+
+/* ingredients css */
+.ingre_info{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-style: normal;
+}
+
+.heading{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    text-align: center;
+    font-style: normal;
+    text-transform: capitalize;
+    color:#c86500 ;
+}
+.hero_heading{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+    color:#c86500 ;
+
+}
+.hero_para{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-style: normal;
+}
+
+@media(min-width:700px){
+    .container{
+        max-width: 800px;
+    }
+    .container{
+        display: flex;
+        align-items:center ;
+        justify-content: space-around;
+        gap: 2em;
+    }
+.hero_header{
+    padding: 1em; 
+    max-width:1400px ;                                                                              
+
+}
+.hero_para_heading{
+    text-align: left;
+    max-width: 400px;
+}
+    .above_image{
+        top: 0;
+        max-width: 500px;
+        box-shadow: none;
+    }
+    .heading{
+        text-align: right;
+    }
+}

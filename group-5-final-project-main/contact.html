@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/contact.css"/>
+    <link rel="stylesheet" href="chat box/1.css">
+    <title>Taco Talk: Contact Us</title>
+</head>
+<body>
+    <header>
+        <div id="toplogo">
+            <img 
+                src="./images/whitelogo.png"
+                width="150px"
+                height="150px"
+            />
+        </div>
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About Us</a>
+            <a href="./addrecipe.html">Add Your Recipe</a>
+        </nav>
+    </header>
+
+    <main> 
+        <h2>Check Out Our Socials:</h2>
+
+        <div id="socialsbox">
+            <div class="socials">
+                <div>
+                    <a href="https://instagram.com/tacotalksofficial">
+                        <img 
+                            src="./images/social media icons/instagram.png"
+                            width="100px"
+                            alt="Instagram"
+                        />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.facebook.com/tacotalksofficial">
+                        <img 
+                            src="./images/social media icons/facebook.png"
+                            width="100px"
+                            alt="Facebook"
+                        />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/tacotalksofficial">
+                        <img 
+                            src="./images/social media icons/youtube.png"
+                            width="100px"
+                            alt="YouTube"
+                        />
+                    </a>
+                </div>          
+            </div>
+        </div>
+
+        <div id="contactsbox">
+            <div class="contacts">
+                <h4>Contact Us!</h4>
+    
+                <div class="contact">
+                    <div style="padding: 10px;">
+                        <img 
+                            src="https://cdn-icons-png.flaticon.com/128/3059/3059502.png"
+                            width="20px"
+                            alt="Telephone"
+                        />
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <p>+1 5352 251510</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <div style="padding: 10px;">
+                        <img 
+                            src="https://cdn-icons-png.flaticon.com/128/3178/3178158.png"
+                            width="20px"
+                            alt="Email"
+                        />
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <h style="font-family: 'Bahnschrift'; margin: 0; font-size: 20px;">@tacotalksofficial@gmail.com</h>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+        
+    </main>
+
+    <div class="botmain">
+        <div id="main__top">
+            <div class="chatheader">
+                <span><img src="chat box/images/tacologo.png" alt="" height="30px" width="30px" style="border-radius: 50%;"></span>
+                <span>Tako Talk</span>
+                <button id="cancel" onclick="cancelBot()" ><img src="chat box/images/cancel.png" alt="" height="30px" width="30px"></button>
+            </div>
+            <div id="botcontainer">
+                <div class="new-div">
+                    <div id="botheading">Bot
+                    </div>
+                    <p class="chatparag">Hi there!👋 <br>
+                        Ask me about recipe.  
+                    </p>
+                </div>
+            </div>
+            <div class="inputs">
+                <input type="text" id="user-input" placeholder="Ask me about recipes here...">
+                <button onclick=" sendmessage()" id="send-btn">Send</button>
+        
+            </div> 
+        </div>
+        <div class="main__buttom" id="hideShowChef">
+            <div id="chatcontainer">
+                <div class="chathover">
+                    Hi!👋 Got any question<br>
+                        I can help you..
+                </div>
+                <div class="chaticon" onclick="startBot()">
+                    <img src="chat box/images/tacologo.png" alt="" class="chatimg">
+                </div> 
+            </div>
+        </div>
+        
+    </div> 
+
+    <script src="chat box/bot.js"></script>
+</body>
+</html>

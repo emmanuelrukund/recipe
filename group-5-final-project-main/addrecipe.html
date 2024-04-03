@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Talk: Add Your Recipe</title>
+    <link rel="stylesheet" type="text/css" href="./styles/addrecipe.css"/>
+</head>
+<body>
+    <header>
+        <div id="toplogo">
+            <img 
+                src="./images/whitelogo.png"
+                width="150px"
+                height="150px"
+            />
+        </div>
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <form id="recipeForm">
+        <h2>ADD YOUR OWN RECIPE NOW!</h2>
+            <div id="formRow">
+                <div class="formField">
+                    <h4>Recipe Name:</h4>
+                    <input type="text">
+                </div>
+
+                <div class="formField">
+                    <h4>Recipe Author:</h4>
+                    <input type="text">
+                </div>
+
+                <div class="formField">
+                    <h4>Image URL:</h4>
+                    <input type="text">
+                </div>
+            </div>
+
+        <div class="description">
+            <h4>Recipe Description:</h4>
+            <textarea></textarea>
+        </div>
+
+        <div id="formRow">
+            <div class="formField">
+                <h4>List of Ingredients:</h4>
+                <textarea></textarea>
+            </div>
+
+            <div class="formField">
+                <h4>Procedure:</h4>
+                <textarea></textarea>
+            </div>
+        </div>
+
+        <button type="submit">Submit for Review</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -8px;
+}
+
+header #toplogo {
+    margin-top: -10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #C66424;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bahnschrift';
+}
+
+p {
+    font-family: 'Bahnschrift';
+    padding: 10px;
+}
+
+#recipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#recipes .recipecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-left: auto;
+}
+
+#recipes .recipebox {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #6b320c;
+    width: 230px;
+    height: 230px;
+    margin-bottom: -280px;
+}
+
+#recipes .recipeimg {
+    width: 200px;
+    height: 200px;
+}
+
+#recipes a {
+    text-decoration: none;
+}
+
+#recipes p {
+    padding: 0px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #6b320c;
+    transition: .3s;
+}
+
+#recipes p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #e9d251d0;
+}
+
+#recipes .recipelikes {
+    margin: -40px;
+    display: flex;
+    flex-direction: row;
+}
+
+#recipes .recipelikes p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#recipes .recipelikes img {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 15px;
+}
+
+/* @media only screen and (min-width: 768px) {
+    
+}       */
+
+@media only screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin-top: -35px;
+    }
+
+    nav a {
+        margin-left: 3px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #recipes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #recipes .recipecontainer {
+        margin-left: 40px;
+        margin-bottom: 80px;
+    }
+}

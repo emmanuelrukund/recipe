@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+img{
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+body{
+    background-color: #f5e58dd0;
+    font-family: 'Trebuchet MS';
+    flex-direction: column;
+    direction: flex;
+    align-items: center;
+   
+    
+}
+h1{
+    text-align: center;
+    color: brown;
+    font-family: 'Trebuchet MS';
+    font-size: medium;
+}
+
+#container{
+    display:flex;
+	justify-content:centre;
+	flex-direction:column;
+	margin-right:20px;
+	margin-left:40px;
+	padding:0px;
+	
+    
+}
+
+h4{
+    color:brown;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}

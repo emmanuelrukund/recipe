@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: -8px;
+}
+
+header #toplogo {
+    margin-top: -10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #C66424;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bahnschrift';
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#recipeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+}
+
+#recipeForm h2 {
+    font-size: 40px;
+    color: #0a5700;
+}
+
+#recipeForm #formRow {
+    display: flex;
+    flex-direction: row;
+    margin: -10px;
+}
+
+#recipeForm .formField, .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+#recipeForm h4 {
+    color: #C66424;
+    font-size: 20px;
+    margin: 0px;
+}
+
+#recipeForm input, textarea {
+    text-align: center;
+}
+
+#recipeForm .description textarea {
+    width: 500px;
+    height: 50px;
+}
+
+#recipeForm .formField textarea {
+    width: 500px;
+    height: 100px;
+}
+
+#recipeForm button {
+    font-family: 'Bahnschrift';
+    background-color: transparent;
+    border-style: none;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #C66424;
+    transition: .5s;
+}
+
+#recipeForm button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0a5700;
+}
+
+/* @media only screen and (min-width: 768px) {
+    
+} */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: visible;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin-top: -35px;
+    }
+
+    nav a {
+        margin-left: 5px;
+    }
+
+    #recipeForm {
+        margin-top: 20px;
+    }
+
+    #recipeForm #formRow {
+        flex-direction: column;
+    }
+
+    #recipeForm h2 {
+        text-align: center;
+    }
+
+    #recipeForm .description textarea {
+        width: 300px;
+        height: 100px;
+    }
+    
+    #recipeForm .formField textarea {
+        width: 300px;
+        height: 100px;
+    }
+
+    #recipeForm button {
+        font-size: large;
+    }
+}

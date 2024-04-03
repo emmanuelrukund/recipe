@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+.botmain{
+    position:fixed;
+    width: 80%;
+    max-width: 300px;
+    bottom: 350px;
+    right: 0;
+    height:200px;  
+}
+.chatimg{
+      width: 100%;
+  }
+#cancel{
+    background: none;
+    
+}
+#cancel:hover{
+    background: red;
+}
+.chatheader{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: rebeccapurple;
+}
+
+#botcontainer{
+    height: 200px;
+    background:white;
+    padding: 1em;
+    overflow-y: auto;
+
+    
+}
+
+.new-div{
+    width: 95%;
+    background: #9ea2a8;
+    margin-bottom: 1em;
+    border-radius: 3px;
+    padding: .4em;
+    color: #6b320c;
+}
+#botheading{
+    width: fit-content;
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: 2px dotted;
+}
+
+.inputs{
+    border: 2px solid #9ea2a8 ;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    min-height: 50px;
+    background: white;
+    font-size: 2.1rem;
+    padding: .5em;
+}
+#user-input{
+    width: 80%;
+    border: none;
+}
+#send-btn{
+font-size: .9rem;
+    width: 20%;
+    max-width: 100px;
+    padding: .5em;
+    background-color: rebeccapurple;
+    border-radius: 40px;
+    border: none;
+
+}
+
+/* CSS FOR CHAT ICON AND IMAGE BELLOW */
+
+#chatcontainer{
+    
+    position: relative;
+    padding: 1em;
+}  
+.chaticon{
+    position: absolute;
+    border-radius:50% ;
+    overflow: hidden;
+    border: 3px solid  goldenrod;
+    width: 70px;
+    left: 125px;
+    top:70px;
+
+            
+}
+.chathover{
+    position:absolute;
+    border: 2px solid white;
+    padding: 1em;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+}
+
+#main__top{
+visibility:hidden;
+}
+.main__buttom{
+position: relative;
+right: 0;
+bottom: 0;
+}

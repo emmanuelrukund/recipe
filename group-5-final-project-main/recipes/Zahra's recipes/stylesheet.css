@@ -1,0 +1,27 @@
+body{
+background-color:  #f5e58dd0;
+font-family:bahnschrift;
+display:flex;
+flex-direction:row;
+}
+h1{
+	color:brown;
+	font-family:bahnschrift;
+	text-align:centre;
+	font-size:1.5cm;
+}
+
+h2,h3{
+	color:brown;
+	text-align:centre;
+	font-family:bahnschrift;
+}
+#container{
+	display:flex;
+	justify-content:centre;
+	flex-direction:column;
+	margin-right:20px;
+	margin-left:40px;
+	padding:0px;
+	
+}

@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: -8px;
+}
+
+header #toplogo {
+    margin-top: -10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #C66424;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    font-family: 'Bahnschrift';
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 55px;
+    color: #C66424;
+    margin: 10px;
+}
+
+main #socialsbox {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+main .socials {
+    display: flex;
+    padding-top: 10px; 
+    text-align: center; 
+    padding-right: 30px; 
+    justify-content: center; 
+    align-items: center;
+}
+
+main .socials div {
+    padding: 50px;
+}
+
+main #contactsbox {
+    color: #0a5700;
+    justify-content: center; 
+    align-items: center;
+}
+
+main .contacts {
+    padding: 5px; 
+    text-align: justify;
+}
+
+main .contacts h4 {
+    margin-bottom: 0px; 
+    font-family: 'Bahnschrift'; 
+    font-size: 40px; 
+    text-align: center;
+}
+
+main .contact {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+main .contacts p {
+    font-family: 'Bahnschrift'; 
+    margin: 0; 
+    font-size: 20px;
+}
+
+/* @media only screen and (min-width: 768px) {
+    
+} */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: cover 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: visible;
+        background-color: #f5e58dd0;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin-top: -35px;
+    }
+
+    nav a {
+        margin-left: 5px;
+    }
+
+    main .socials {
+        margin-left: 90px;
+    }
+
+    main .socials div {
+        padding-left: 5px;
+    }
+
+    main .socials img {
+        width: 50px;
+    }
+}
